@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d2e555357ecb432bab9c91ecc9f887d9" Name="Diagram1">
+        <EntityTypeShape EntityType="stosrursModel.Client" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="stosrursModel.Employees" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="stosrursModel.Gategory" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="stosrursModel.Product" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="stosrursModel.ProvededService" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="stosrursModel.Role" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="stosrursModel.Service" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="stosrursModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="stosrursModel.FK_ProvededService_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="stosrursModel.FK_Employees_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="stosrursModel.FK_ProvededService_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="stosrursModel.FK_Product_Gategory" ManuallyRouted="false" />
+        <AssociationConnector Association="stosrursModel.FK_Service_Gategory" ManuallyRouted="false" />
+        <AssociationConnector Association="stosrursModel.FK_ProvededService_Service" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

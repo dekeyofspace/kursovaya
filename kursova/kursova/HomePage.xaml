@@ -1,0 +1,23 @@
+﻿<Page x:Class="kursova.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:kursova"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="400"
+      Title="HomePage">
+
+    <Grid Background="#F1D9DD">
+        <StackPanel Margin="0,64,-0.4,329.4" >
+            <Image Height="74" Width="150" VerticalAlignment="Center" HorizontalAlignment="Center" Source="resourses/Group 11.png"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="182" Width="200" >
+            <Label Content="Логин" FontSize="16" />
+            <TextBox Name="txbLogA" VerticalContentAlignment="Center" Height="28"/>
+            <Label Content="Пароль" FontSize="16"  />
+            <PasswordBox Name="psbPassA" VerticalContentAlignment="Center" Height="28" />
+            <Button x:Name="AutorizeClick" Content="Войти"  Height="33" Background="#560B26" Foreground="White" FontSize="16" Click="AutorizeClick_Click" VerticalAlignment="Bottom" Margin="20"/>
+        </StackPanel>
+    </Grid>
+</Page>

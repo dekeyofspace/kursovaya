@@ -1,0 +1,33 @@
+﻿<Page x:Class="kursova.AddCleintPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:kursova"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="936"
+      Title="AddCleintPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="73*"/>
+            <RowDefinition Height="627*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="#F1D9DD" Orientation="Vertical">
+            <TextBlock  TextAlignment="Center" Text="Регистрация сотрудника" 
+                       VerticalAlignment="Center" HorizontalAlignment="Center" Width="400" Height="50" FontSize="35 " Margin="20"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Height="600" Width="735">
+            <StackPanel Orientation="Horizontal" Width="500" HorizontalAlignment="Center">
+                <TextBlock TextAlignment="Center" Text="Полное имя" FontSize="32" Height="40" />
+                <TextBox  Name="txbName" Height="60" Width="300" FontSize="32" Margin="20" HorizontalAlignment="Left" BorderBrush="Black" Foreground="#Black"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="638" HorizontalAlignment="Center">
+                <TextBlock TextAlignment="Center" Text="Номер телефона" FontSize="32" Height="40" />
+                <TextBox  Name="txbProne" Height="60" Width="300" FontSize="32" Margin="20" HorizontalAlignment="Left" BorderBrush="Black" Foreground="Black"/>
+            </StackPanel>
+            <Button Content="Добавить клиента" FontSize="32" Background="#F1D9DD" Height="60" Width="400" Margin="80" Click="Button_Click"/>
+        </StackPanel>
+        <Button Content="Назад" FontSize="32" Background="#F1D9DD" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="200" Height="50" Margin="20" Click="Button_Click_1"/>
+    </Grid>
+</Page>

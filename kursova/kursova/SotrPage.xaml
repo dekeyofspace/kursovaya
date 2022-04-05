@@ -1,0 +1,38 @@
+﻿<Page x:Class="kursova.SotrPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:kursova"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="936"
+      Title="SotrPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="467*"/>
+            <ColumnDefinition Width="469*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="782*"/>
+            <RowDefinition Height="69*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Background="#F1D9DD" Grid.Row="0"  
+                     Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="2">
+            <TextBlock TextAlignment="Center" Text="Сотрудники" 
+                       VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="23" Margin="10"/>
+        </StackPanel>
+        <DataGrid x:Name="GridSotr" Background="White" Grid.Row="1" Margin="0,2.6,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Имя, Фамилия" Width="*" Binding="{Binding FullNameEmployees}"/>
+                <DataGridTextColumn Header="Должность" Width="*" Binding="{Binding Role.NameRole}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50"  Width="300">
+            <Button Background="#F1D9DD" Content="Регистрация сотрудника" FontSize="25" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Click="Button_Click"/>
+
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="300"/>
+    </Grid>
+</Page>

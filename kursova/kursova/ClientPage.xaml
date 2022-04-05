@@ -1,0 +1,30 @@
+﻿<Page x:Class="kursova.ClientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:kursova"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="936"
+      Title="ClientPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="833*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="#F1D9DD" Orientation="Horizontal" Margin="0,0,0,2.2" >
+            <TextBlock Margin="10" Width="140" Text="Клиенты" FontSize="28"></TextBlock>
+            <Button Content="Добавить клиента" Height="40" FontSize="26" Margin="10" Width="220" Background="#F1D9DD" Click="Button_Click" ></Button>
+        </StackPanel>
+        <DataGrid x:Name="GridCli" Background="White" Grid.Row="1" AutoGenerateColumns="False" Margin="0,1.8,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Полное имя клиента" Width="*" Binding="{Binding FullNameClient}"/>
+                <DataGridTextColumn Header="Телефон" Width="*" Binding="{Binding NumberPhone}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
